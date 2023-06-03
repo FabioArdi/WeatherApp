@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-4">Weather App</h1>
+                <form method="post" action="/weather">
+                    <div class="form-group">
+                        <label for="location">Enter location:</label>
+                        <input type="text" class="form-control" id="location" name="location" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Get Weather</button>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="/ping" class="btn btn-secondary">Ping</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
